@@ -5,13 +5,12 @@ import { useEffect, useState } from "react"
 
 function Mypokemon (){
     const[pokemon,setPokemon]= useState("/vercel.svg")
-    const[id,setId]=useState("id")
+    const[id,setId]=useState("000")
     const[estado,setEstado]= useState("esperando")
     const[type,setType]=useState("type")
     const[height,setHeight]=useState("Height")
     const[weight, setWeight]=useState("weight")
     const[abilities,setAbilities]=useState("abilities")
-    const[abilities2, setAbilities2]=useState("abilities2")
     const[hp,setHp]=useState("HP")
     const[attack,setAttack]=useState("attack")
     const[defense,setDefense]=useState("defense")
@@ -26,14 +25,13 @@ function Mypokemon (){
             //id
             setId(data.id)
             //type
-            setType(data.types[0].type.name /*+ ", "+ data.types[1].type.name*/)
+            setType(data.types[0].type.name + ", "+ data.types[1].type.name)
             //height
             setHeight(data.height)
             //weight
             setWeight(data.weight)
             //habilidades
-            setAbilities(data.abilities[0].ability.name)
-            setAbilities2(data.abilities[1].ability.name)
+            setAbilities(data.abilities[0].ability.name+ ", "+ data.abilities[1].ability.name)
             //hp
             setHp(data.stats[0].base_stat)
             //attack
@@ -57,7 +55,7 @@ function Mypokemon (){
             <h2 className={style.type}>Type:  {type}</h2>
             <h2>Height: {height/10} m</h2>
             <h2>Weight: {weight/10} kg</h2>
-            <h2 className={style.habilities}>Habilities: {abilities}, {abilities2}</h2>
+            <h2 className={style.habilities}>Habilities: {abilities}</h2>
 
             <h1>Stats</h1>
 
