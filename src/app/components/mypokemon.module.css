@@ -1,0 +1,63 @@
+.id{
+    text-align: right;
+    
+}
+.contenedor{
+    background: #F5F7FB;
+}
+.name{
+    text-transform: capitalize;
+    color: #26367C;
+    font-family: Poppins;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.title{
+    color: #393939;
+    font-family: Poppins;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.about{
+    width: 475px;
+    height: 524px;
+    flex-shrink: 0;
+    border-radius: 50px 120px 0px 0px;
+    background: #FFF;
+}
+.about h2{
+    
+    color: #393939;
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.about h1{
+    color: #393939;
+    font-family: Poppins;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.id{
+    color: #7480B2;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.habilities{
+    text-transform: capitalize;
+}
+.type{
+    text-transform: capitalize;
+}
+
